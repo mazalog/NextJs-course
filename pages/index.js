@@ -8,8 +8,6 @@ import { loginWithGithHub, onAuthStateChanged } from "../firebase/client"
 
 export default function Home() {
 
-  const a = "Hola."
-
   const [user, setUser] = useState(undefined)
 
   useEffect(() => {
