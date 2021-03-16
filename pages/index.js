@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
+import { colors } from "styles/theme"
+import { loginWithGithHub, onAuthStateChanged } from "firebase/client"
+import AppLayout from "components/AppLayout"
+import Avatar from "@c/Avatar"
+import Button from "components/Button"
+import GitHub from "components/icons/GitHub"
 import Head from "next/head"
-import AppLayout from "../components/AppLayout"
-import { colors } from "../styles/theme"
-import Button from "../components/Button"
-import GitHub from "../components/icons/GitHub"
-import { loginWithGithHub, onAuthStateChanged } from "../firebase/client"
 
 export default function Home() {
 
@@ -28,7 +29,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>devter rama two</title>
+        <title>devter | home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -48,8 +49,12 @@ export default function Home() {
             )}
             {user && user.avatar && (
               <div>
-                <img src={user.avatar} />
-                <strong>{user.username}</strong>
+                <Avatar
+                  alt={user.username}
+                  src={user.avatar}
+                  text={user.username}
+                  withText
+                />
               </div>
             )}
           </div>
