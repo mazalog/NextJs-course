@@ -1,15 +1,17 @@
 import AppLayout from "@c/AppLayout";
 import Devit from "@c/Devit";
+import useUser from "hooks/useUser";
 import { useEffect, useState } from 'react'
+import { fetchLatestDevits } from 'firebase/client'
 
 export default function HomePage() {
     const [timeline, setTimeline] = useState([])
 
+    const user = useUser()
     useEffect(() => {
-        fetch('http://localhost:3000/api/statuses/home_timeline')
-            .then(res => res.json())
-            .then(setTimeline)
-    }, [])
+        user && fetchLatestDevits().then(setTimeline)
+    }, [user])
+
     return (
         <>
             <AppLayout>
@@ -21,10 +23,13 @@ export default function HomePage() {
                         timeline.map((devit) =>
                             <Devit
                                 avatar={devit.avatar}
+                                createdAt={devit.createdAt}
                                 id={devit.id}
                                 key={devit.id}
-                                message={devit.message}
-                                username={devit.username}
+                                content={devit.content}
+                                userName={devit.userName}
+                                userId={devit.userId}
+                                img={devit.img}
                             />
                         )
                     }
@@ -34,20 +39,27 @@ export default function HomePage() {
             <style jsx>{` 
                 header{
                     align-items:center;
-                    border-bottonm:1px solid #ccc;
+                    background:#ffffffaa;
+                    backdrop-filter:blur(5px);
+                    border-bottom:1px solid #eee;
                     height:49px;
                     display:flex;
                     position:sticky;
                     top:0;
                     width:100%;
                 }
-
+                h2{
+                    font-size:21px;
+                    font-weight:800;
+                    padding-left:15px;
+                }
                 section{
                     padding-top:56px;
                 }
                 nav{
+                    background:#fff;
                     bottom:0;
-                    border-top:1px solid #ccc;
+                    border-top:1px solid #eee;
                     height:49px;
                     position:sticky;
                     width:100%;
