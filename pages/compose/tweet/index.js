@@ -1,4 +1,3 @@
-import AppLayout from "@c/AppLayout"
 import Button from "@c/Button"
 import useUser from "hooks/useUser"
 import { addDevit, uploadImage } from 'firebase/client'
@@ -98,28 +97,26 @@ export default function ComposeTweet() {
 
     return (
         <>
-            <AppLayout>
 
-                <form onSubmit={handleSubmit}>
-                    <textarea
-                        onChange={handleChange}
-                        onDragEnter={handleDragEnter}
-                        onDragLeave={handleDragLeave}
-                        onDrop={handleDrop}
-                        value={message}
-                        placeholder="Que estas pensando"
-                    ></textarea>
-                    {imgUrl && <section className="remobe-img">
-                        <button onClick={() => setImgURL(null)}>x</button>
-                        <img src={imgUrl} />
-                    </section>}
-                    <div>
-                        <Button
-                            disabled={isButtonDisabled}>
-                            Mazatwear</Button>
-                    </div>
-                </form>
-            </AppLayout>
+            <form onSubmit={handleSubmit}>
+                <textarea
+                    onChange={handleChange}
+                    onDragEnter={handleDragEnter}
+                    onDragLeave={handleDragLeave}
+                    onDrop={handleDrop}
+                    value={message}
+                    placeholder="Que estas pensando"
+                ></textarea>
+                {imgUrl && <section className="remobe-img">
+                    <button onClick={() => setImgURL(null)}>x</button>
+                    <img src={imgUrl} />
+                </section>}
+                <div>
+                    <Button
+                        disabled={isButtonDisabled}>
+                        Mazatwear</Button>
+                </div>
+            </form>
             <style jsx>{`
             div{
                 padding:15px;

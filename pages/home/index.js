@@ -1,4 +1,3 @@
-import AppLayout from "@c/AppLayout";
 import Devit from "@c/Devit";
 import useUser from "hooks/useUser";
 import { useEffect, useState } from 'react'
@@ -14,28 +13,26 @@ export default function HomePage() {
 
     return (
         <>
-            <AppLayout>
-                <header>
-                    <h2>Inicio</h2>
-                </header>
-                <section>
-                    {
-                        timeline.map((devit) =>
-                            <Devit
-                                avatar={devit.avatar}
-                                createdAt={devit.createdAt}
-                                id={devit.id}
-                                key={devit.id}
-                                content={devit.content}
-                                userName={devit.userName}
-                                userId={devit.userId}
-                                img={devit.img}
-                            />
-                        )
-                    }
-                </section>
-                <nav></nav>
-            </AppLayout>
+            <header>
+                <h2>Inicio</h2>
+            </header>
+            <section>
+                {
+                    timeline.map((devit) =>
+                        <Devit
+                            avatar={devit.avatar}
+                            createdAt={devit.createdAt}
+                            id={devit.id}
+                            key={devit.id}
+                            content={devit.content}
+                            userName={devit.userName}
+                            userId={devit.userId}
+                            img={devit.img}
+                        />
+                    )
+                }
+            </section>
+            <nav></nav>
             <style jsx>{` 
                 header{
                     align-items:center;

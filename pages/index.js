@@ -2,7 +2,6 @@ import { useEffect } from "react"
 import { colors } from "styles/theme"
 import { loginWithGithHub } from "firebase/client"
 import { useRouter } from 'next/router'
-import AppLayout from "components/AppLayout"
 import Button from "components/Button"
 import GitHub from "components/icons/GitHub"
 import Head from "next/head"
@@ -13,8 +12,6 @@ export default function Home() {
   const user = useUser()
 
   const router = useRouter()
-
-
 
   useEffect(() => {
     user && router.replace('/home')
@@ -34,24 +31,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AppLayout>
-        <section>
-          <img src="/maza.png" alt="logo" />
-          <h1>MazaSocial</h1>
-          <h2>
-            Talk about development <br /> with developers 🧑‍💻
+      <section>
+        <img src="/maza.png" alt="logo" />
+        <h1>MazaSocial</h1>
+        <h2>
+          Talk about development <br /> with developers 🧑‍💻
           </h2>
-          <div>
-            {user === USER_STATES.NOT_LOGGED && (
-              <Button onClick={handleClick}>
-                <GitHub />
+        <div>
+          {user === USER_STATES.NOT_LOGGED && (
+            <Button onClick={handleClick}>
+              <GitHub />
                 Login with GitHub
-              </Button>
-            )}
-            {user === USER_STATES.NOT_KNOW && <span>Loading...</span>}
-          </div>
-        </section>
-      </AppLayout>
+            </Button>
+          )}
+          {user === USER_STATES.NOT_KNOW && <span>Loading...</span>}
+        </div>
+      </section>
 
       <style jsx>
         {`

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mazasocial",
+  "private_key_id": "98b027de5a9bb0e0d5e4a8edbef7267b6b2d76e1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDial9SjhsHByGN\nMX2ySiiclP7kRkM7SeyEEtB7JrN97PRk4B63AJDy627hY/HWv7PSc5rC/ac93O3n\nbB6+DJtJuJNiU4sSAjn8o0qJgwqngTnrqTigBwisPDK6bsHvA1XKi3MT63cpDEs8\nl+rwOYu52JsoA5yPrOhcH1TSdkRu7GCeTVVQsu1fwZaYNQJwNAL3ZCmILwg8kAq4\nzgnuQFadkTcyB8YF07MET53OnJv9RKGh0AeywcBKQOzzWL9P5ZSQeBhHfScSTDBi\nRU/WJGecH7JZsgTAdoZjDbTZq3Ju8uHQMdKavu8tlZUiu5m84y+g0kTz2XEhtgpU\nQYhiILkpAgMBAAECggEABRw1LOX+hSuWMxtyr1NOKa6RNtzBHWBJ7CHdPmeoCx0N\n17hZPnR5pl9FoDpYayo7fZyqBGGjjy632I56U9FxWyTFKtB2O0Cn8g72GowbHEm7\nNsREfhQlOsycW9SDywhjvM+7QrAAqgFYMgoUaDnxmzm2KB02Fjtm/oFJ3FAwCOLW\nWqrapMglifcixub3vtZjlA5FAX8LPy04ZqGyTTJ9Swme4yhsH4KmsPaDgwH02nZr\n23JPEC30802KLkTKeq8n1m7o3Ce+QNNkdg0HIUCwrnae7QRZ62YbCDlzxOav5tNn\nmWvg9pvKfF48ZWSibQUq7nGzymZJF8oPtKoxUBVY8wKBgQD8uJ/1UHQqctyVWwNS\n/e3UPXxHAB++pL7HA6AYFtaBpIrtZRE9/v2FtukikIEYn6xy3wROk2SRn6u6n+5F\nvJLSAdBsJXfX98z1cVfANmtDmM6zXiHOI88z0XmGzVYj1u7mL3SX8bBtMj4zdzOW\nVgBVwap8getBtm2d+9J554lLCwKBgQDlWmCQfq44kKWIV78z2aGxk7ZgR2Fla1Cw\nRwDXsocj42B4kWbruhcSg64brNllPIxUZdQHYZa8DHwTSvgedU0S4Bl5H6M5Bmyp\nfDkEbT8jLcC7brj7fnLOv00MjjrrRyrhCLNa8LFSY4Urrbfep8V3YBHZVKO1ZDfP\nL+yQuWrNGwKBgFy5qQcrQ9QnXMP4JtoWjWKoRKcQZpVegRkoPV9ZUc8zfj3oLVFf\n88lR+WxTNOrB+1YSedQSxH2h5jKNZ7FypTQkskJb5QL6ytrrgVTnIqgkswKg8Spf\nfTD4FOze/lIcFH+kvdTaOu911diwTd9FIs5URqd0S8tKkiG7Odi8mWVNAoGBAJnd\n4xCtXDZonBT3QTgI1lhqz5yR5r6Cm3RXfjI2/EDQZ0Ubzx9wDdCG9QRuFr67Oy3X\nzsJQ7y4jdg3/aqwMZ/O00oIW/orgS3/87ceRfx0bscRNCN74Ow+G+arltJNpgFPO\nYX0uItgyGgJunf9LMMfgdLkH9nhXzrU54oxJSGRnAoGAZMETyd9npinn7P8PizXv\n5Iy6D9Wt36qkDlSt1IMMVqpX19rgUdOpN7Pl4DP1WbvxkdYej7w2ybfZj0TraNfy\nWM79IhPkG5dUVPmFxKIN9mhwbskWWN6XTG54G4ygB/H8cT5jCaswgUrhCkSVSdij\nPci4WI8AJsHNf3Jb3gu7MHA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-txnor@mazasocial.iam.gserviceaccount.com",
+  "client_id": "115572447250941996246",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-txnor%40mazasocial.iam.gserviceaccount.com"
+}

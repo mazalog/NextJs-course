@@ -1,7 +1,11 @@
+import AppLayout from "@c/AppLayout"
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
     </>
   )
 }
